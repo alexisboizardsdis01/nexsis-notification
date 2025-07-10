@@ -1,6 +1,6 @@
-# Extension Nexsis Notifier
+# Extension Nexsis Notification
 
-Cette extension pour navigateur surveille les alertes Nexsis et joue un son de notification lorsqu'une alerte est détectée.
+Cette extension pour navigateur surveille les appels arrivant dans le SGA Nexsis et joue un son de notification lorsqu'une alerte est détectée, tant qu'elle n'est pas acquittée.
 
 ## Fonctionnalités
 
@@ -38,11 +38,6 @@ Cette extension pour navigateur surveille les alertes Nexsis et joue un son de n
 - `son_nexsis.mp3` : Fichier audio pour la notification
 - `icon-48.png` : Icône de l'extension
 
-## Remarques techniques
-
-- L'extension utilise un MutationObserver pour détecter les changements dans la page
-- Les paramètres sont stockés dans chrome.storage.local pour persistance
-- Compatible avec les navigateurs basés sur Chromium et Firefox
 
 # CHANGELOG
 
@@ -58,7 +53,7 @@ Cette extension pour navigateur surveille les alertes Nexsis et joue un son de n
 - Ajout d'un logo
 
 ## V4
-- Fixe 
+- Fixe répétition de sonnerie 
 - Changement du logo de l'extension
 
 Développé par A. BOIZARD - SDIS01
