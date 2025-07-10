@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "NexSiS Notfications",
+  "version": "1.4",
+  "description": "Rejoue le son de notification d'un appel dans NexSiS. Développé par A. BOIZARD - SDIS01",
+  "icons": {
+    "48": "icon-48.png"
+  },
+  "permissions": ["activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bac.qualif.nexsis18-112.fr/sga/salon-traitement",
+        "https://formation.qualif.nexsis18-112.fr/sga/salon-traitement",
+        "https://nexsis.prod.nexsis18-112.fr/sga/salon-traitement"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "son_nexsis.mp3"
+  ],
+  "update_url": "https://votre-serveur.com/updates.xml"
+
+}

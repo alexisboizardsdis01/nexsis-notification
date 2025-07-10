@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rejouer Son</title>
+  <style>body{font-family:sans-serif;padding:10px;}</style>
+</head>
+<body>
+  <div style="margin-top:15px; display: flex;flex-direction: column;">
+
+    <label for="volumeSlider">Volume: <span id="volumeValue">20</span>%</label>
+    <input type="range" id="volumeSlider" min="0" max="100" step="1" value="20">
+
+    <label for="delayInput">Delai (en secondes)</label>
+    <input type="number" id="delayInput" min="0" max="60" step="1" value="5">
+
+    <div id="statusMessage" style="margin-top: 10px; color: green; font-size: 0.8em;"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
